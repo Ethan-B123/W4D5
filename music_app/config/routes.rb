@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resource :session, only: %i(new create destroy)
 
   resources :bands, only: %i(index show new create edit update destroy)
+  resources :albums, only: %i(show new create edit update destroy)
 end
 
 
